@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drones For Infrastructure</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  @font-face{
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Oswald', sans-serif;
+}
+  .navbar{
+	margin-bottom: :0;
+	border-radius: 0;
+	background-color:#FFF;
+	color: black;
+	padding: 1% 0;
+	font-size: 1.4 em;
+	font-family: 'Oswald', sans-serif;
+	border:0;
+}
+
+.navbar-brand{
+	float: left;
+	min-height: 55px;
+	padding: 0 15px 5 px;
+	color: black;
+
+}
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus,.navbar-default .navbar-nav .active a:hover{
+	color:black;
+	background-color:#FFF;
+}
+.navbar-default .navbar-nav li a{
+	color:black;
+}
+
+.carousel-caption{
+top:50%;
+transform: translateY(-50%);
+text-transform: uppercase;
+font-family: 'Oswald';
+color:#fff;
+font-size: 800%;
+}
+@media (max-width:600px){
+	.carousel-caption
+	{
+		font-size: 100%;
+	}
+	.h1{
+		font-size: 100%;
+		font-family: 'Oswald';
+		text-align: center;
+	}
+	.heading{
+		font-size: 100%;
+		font-family: 'Oswald';
+		text-align: center;
+	}
+	.row{
+
+	}
+}
+ .h1{
+		font-family: 'Oswald';
+		text-align: center;
+		font-size:120%;
+	}
+ .heading{
+		font-family: 'Oswald';
+		text-align: center;
+		font-size:110%;
+	}
+.row{
+	font-family: 'Oswald';
+	font-size:120%;
+	text-align: justify;
+
+	}
+.parallax { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/img/teodorik-mensl-316897-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/anshika/davide-ragusa-24118-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/img/alexander-pidgeon-37749-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/anshika/not-brittany-shh-pls-426031-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax5 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/anshika/jacek-dylag-545264-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax6 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/photo-1502904550040-7534597429ae.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax7 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/anshika/edwin-andrade-153753-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container1 {
+  padding: 0 16px;
+}
+
+.container1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.parallax8 { 
+    /* The image used */
+    margin-top: 30px;
+    background-image: url("C:/Users/amit/Desktop/NJIT/photo-1502922038-4e6b84cc16c0.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+	background-color: white;
+}
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-image: url("C:/Users/amit/Desktop/NJIT/anshika/not-brittany-shh-pls-426031-unsplash.jpg");
+   color: white;
+   text-align: left;
+   padding-top:5%;
+   padding-left:14%;
+   padding-right:10%;
+   padding-bottom:2%;
+}
+
+   </style>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">	
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
+					<span class="icon-bar"></span>	
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand">Drones in NJIT</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavBar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="C:\Users\amit\Desktop\NJIT\drones1.html#myCarousel">Home</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#PaperCall">Call For Papers</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#InvitedPapers">Call For Invited Sessions</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#Demos">Call For Demos</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#Registration">Registration</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#Schedule">Schedule</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#Team">Committes</a></li>
+					<li><a href="C:\Users\amit\Desktop\NJIT\drones1.html#Contact">Contact Us</a></li>
+				</ul>
+			</div>		
+		</div>
+	</nav>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+			<img  src="C:\Users\amit\Desktop\NJIT\simeon-frank-196101-unsplash1.jpg" style="opacity: 0.8";
+    style="filter: alpha(opacity=80)" >
+			<div class="carousel-caption">
+				<b>Drone Infrastructure in NJIT</b>
+			</div>
+		</div> 
+		</div> 
+	</div>
+		<div id="Aim" class="container text-center">
+		<div class="row">
+			<h1><center>Aim</center></h1>
+			<br>
+				<p>The New Jersey Institute of Technology (NJIT) – in collaboration with IEEE North Jersey Section – announces Drones for Infrastructure 2019, a technical workshop on the design, implementation, applications and societal implications of using drones and other unmanned aerial vehicles (UAVs).<br><br>
+
+				The workshop is intended for individuals with scientific, technical, policy, and implementation interests in drones and UAVs. Sessions will be available on a wide range of issues from navigation algorithms for cohorts of coordinated drones to the laws ethics of drone-use in inspection in the public arena. Researchers and administrators in these areas are encouraged to submit proposals for special sessions, nominations of keynote speakers, proposals for live demonstrations, and papers for oral and poster presentations.</p>
+			</div>
+		</div>
+		<div id="Workshop" class="parallax"></div>
+		<div  class="container text-center">
+		<div class="row">
+			<h1><center>Workshops</center></h1>
+			<br>
+				<p><center>The workshop will take place on the  NJIT Campus, (University Heights, Newark, NJ 07102)
+				<br>
+				Please email us at <a href="drones@njit.edu">drones@njit.edu</a> for general information queries.
+				<br>
+				<a href="https://edas.info/N25125">Click Here</a> to upload abstracts for papers
+				<br>
+				<a href=http://www.dronesforinfrastructure.org/call_for_sessions/">Click Here</a> to submit a proposal for an invited session
+				<br>
+				<a href="http://www.dronesforinfrastructure.org/call_for_demos/">Click Here</a> to submit a proposal for a live demonstration<br><br>
+			 </center></p>
+			</div>
+		</div>
+		<div id="Session" class="parallax1"></div>
+	<div class="container text-center"><center>
+  <div class="row"><h1><center>Session</center></h1><br></div><p>
+   <div style="overflow-x:auto;">
+  <table class="table table-bordered table-fixed">
+      <tr><td><th><center><div class="heading">Conference Focus Areas and Topics</div></center></th></td>
+      </tr><tr>
+    <th><center><div class="heading">Topics</heading></center></th>
+       <th><center><div class="heading">Focus</heading></center></th>
+      </tr>
+<tbody>   
+      <tr>
+        <td><center><br><br><div class="heading">Design and Implementation</div><br><br></center></td>
+        <td><table class="table  table-hover">
+        <tr>
+        <td><div class="heading">Flight control, navigation, telematics, and collision avoidance</div>
+        </td>
+        </tr>
+        </hr><tr>
+        <td><div class="heading"> Autonomous drones</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading"> Drone formation flying and swarming</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td> <div class="heading">Underwater drone technology</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading">Computing aspects of drones</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading">Drone communication and communication security</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading">Ethics of drone manufacturing, design and use</div>
+        </td>
+        </tr>
+        </table></td></tr>
+     <tr>
+        <td><center><br><br><br><br><br><br><br><br><div class="heading">Applications of Drones</div><br><br><br><br><br><br><br><br></center></td>
+        <td><table class="table  table-hover">
+        <tr>
+        <td> <div class="heading">Infrastructure inspection (e.g., bridges, tunnels, dams, pipelines, structures, industrial plants)</div>
+        </td>
+        </tr>
+        </hr><tr>
+        <td> <div class="heading">Surveying (pre-construction and during construction)</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading"> Traffic surveillance (data collection) and traffic incident management</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td> <div class="heading"> Utilities management</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td> <div class="heading">Oil and gas industry</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading">Maritime applications, including underwater</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading"> Mail and parcel delivery</div>
+        </td>
+        </tr></hr>
+        <tr>
+        <td><div class="heading">Homeland security, law enforcement</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading"> 5G Communication</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading"> Real estate, insurance, tourism, and entertainment</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading"> Remote sensing, mapping, surveying, SLAM, and aerial data collection</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading">Meteorology, climate and weather prediction and analysis</div>
+        </td>
+        </tr>
+        </hr>
+         <tr>
+        <td><div class="heading">Disaster response and post-disaster response</div>
+        </td>
+        </tr>
+        </hr>
+         <tr>
+        <td><div class="heading"> Agricultural and farming</div>
+        </td>
+        </tr>
+        </table></td></tr>
+         <tr>
+        <td><center><br><br><br><br><div class="heading">Design and Implementation</div><br><br><br><br></center></td>
+        <td><table class="table   table-hover">
+        <tr>
+        <td> <div class="heading">Use of drones in education</div>
+        </td>
+        </tr>
+        </hr><tr>
+        <td><div class="heading"> Training for drone operators</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td><div class="heading">  Regulation and legal framework for registration, licensing and operation of drones</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td> <div class="heading"> Public safety and security aspects of drone operation</div>
+        </td>
+        </tr>
+        </hr>
+        <tr>
+        <td> <div class="heading">Drones in the popular press, movies, internet and other public media</div>
+        </td>
+        </tr>
+        </table></td></tr>
+    </tbody></h2>
+  </table></div></p></center>
+</center></div>
+<div id="PaperCall" class="parallax2"></div>
+<div class="container text-center">
+		<div class="row">
+			<h1><center>Call For Papers</center></h1>
+			<br>
+				<p>Authors are invited to submit abstracts describing theoretical advances, applications, and ideas in all fields related for the use of drones for infrastructure.  Authors of selected abstracts will be invited to submit full papers for peer review.  See the table below for the timeline.
+				<br><br>
+				Abstracts (due 14 September 2018): The body of the abstract should be limited to 500 words and should include the title, name(s) of author(s) and author affiliation(s).  The abstract should provide clear description of the planned contribution with a short summary of the main findings/conclusions.
+				<br><br>
+				Full Papers for review (due 16 November 2018): Full papers are intended to report original work not previously published elsewhere. They should address topics relevant to the theme of the workshop and state clearly the contribution and findings of the reported work in the appropriate context. 
+				<br><br>
+				Final submissions for inclusion in the proceedings (due 1 September 2018):  the final paper submission should address reviewer comments (if any) and follow the standard IEEE conference template (double-column format). A manuscript template available at: <a href="https://www.ieee.org/conferences/publishing/templates.html.">https://www.ieee.org/conferences/publishing/templates.html. </a>Full papers will be limited to 6 pages (a $150/page additional charge will be made for pages 6-10). Up to 6 Index terms or Keywords can be used.
+				 to submit a proposal for an invited session
+				<br><br>
+				Presentations: accepted papers will be allotted 20 minutes for an oral presentation (+5 minutes Q/A) or assigned to a poster presentation. All accepted papers will be reproduced in the conference proceedings, and published in IEEE Xplore. Inclusion of an accepted paper in the conference proceedings and in IEEE Xplore is requires a full registration of at least one author, and the actual presentation of the paper in the conference by one of its authors.
+				<br><br>
+				All papers should be submitted via EDAS using this link <a href="http://edas.info/N25125" >(http://edas.info/N25125).</a>  Authors will be asked to use an existing EDAS account or create a new one if they did not use EDAS before.<br><br><br>
+				<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ACTIVITY</th>
+        <th>DATES</th>
+        	
+
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Abstracts for Full Papers/Poster Presentations Due</td>
+        <td>September 14th, 2018</td>
+
+      </tr>
+      <tr>
+        <td>Abstract Notification of Acceptance	</td>
+        <td>September 28th, 2018</td>
+ 
+      </tr>
+      <tr>
+        <td>Draft Paper Due	</td>
+        <td>November 16th, 2018</td>
+
+      </tr>
+       <tr>
+        <td>Draft Paper Notification of Acceptance	
+	</td>
+        <td>December 14th, 2018</td>
+
+      </tr>
+       <tr>
+        <td>Final Manuscript Due	</td>
+        <td>February 1st, 2019</td>
+
+      </tr>
+    </tbody>
+  </table>
+			</p>
+			</div>
+		</div>
+		<div id="InvitedPapers" class="parallax3"></div>
+		<div  class="container text-center">
+		<div class="row">
+			<h1><center>Call for Invited Sessions</center></h1>
+			<br>
+				<p>Individuals interested in organizing a Session are kindly asked to submit a proposal (see below) by 28 September 2018. They are asked to identify the theme of the session and the authors/presenters (with tentative titles of the planned papers).
+				<br><br>
+				Organizers will be notified of acceptance no later than 12 October 2018, along with instructions for paper submission by the authors.  Final manuscripts will be due by 1 February 2019.
+				<br><br>
+				Presentations: each session paper will be allotted 20 minutes for an oral presentation (+5 minutes Q/A). All session papers will be reproduced in the conference proceedings, and published in IEEE Xplore. Inclusion of an accepted paper in the conference proceedings and in IEEE Xplore is requires a full registration of at least one author, and the actual presentation of the paper in the conference by one of its authors.
+				<br><br>
+				All papers should be submitted via EDAS using this link <a href="http://edas.info/N25125" >(http://edas.info/N25125).</a> Authors will be asked to use an existing EDAS account or create a new one if they did not use EDAS before.
+				<br><br>
+				<center>If interested in organizing an Invited Session, please fill the form below.</center><br><br><br>
+			 </p>
+			</div>
+		</div>
+<div id="Demos" class="parallax4"></div>
+		<div  class="container text-center">
+		<div class="row">
+			<h1><center>Call for Demonstrations</center></h1>
+			<br>
+				<p>Individuals and organizations are invited to submit proposals for live demonstrations of drone operation. The purpose of these demonstrations is to showcase state-of-the-art drone technology and solutions, and their practical application for different use cases. For more details, please see attached pdf.
+				<br><br>
+				<center><a href="C:\Users\amit\Desktop\NJIT\Detailed_Call_for_Demonstrations.pdf" >Detailed_Call_for_Demonstrations.pdf</a></center>
+				<br><br>
+				Demonstration proposals are due on 14 September 2018 and applicants will be notified of acceptance no later than 28 September 2018. The proposal consists of an application as well as an abstract. The abstract provides a general understanding of the type of drones application or technology to be demonstrated, whereas the application describes the logistical and technical aspects of the proposed demonstrations. Please fill the below form which comprises of both the application and abstract.
+				<br><br>
+				<center>If interested in organizing an Invited Session, please fill the form below.</center><br><br><br>
+			 </p>
+			</div>
+		</div>
+		<div id="Registration" class="parallax7"></div>
+		<div class="container text-center">
+		<div class="row">
+			<h1><center>Calling For Registration</center></h1>
+			<br>
+				<p><center>Conference Registration Coming Soon!</center>
+				<br>
+				<center>Look for the registration details on this page very soon</center>
+				<br><br>
+			 </p>
+			</div>
+		</div>
+		<div id="Hotel" class="parallax4"></div>
+		<div  class="container text-center">
+		<div class="row">
+			<h1><center>Hotel Information</center></h1>
+			<br>
+				<p><center> <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Hotel</th>
+        <th>Estimated Cost Per Night</th>
+        <th>Distance to NJIT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hampton Inn</td>
+        <td>$129 Single or Double</td>
+        <td>0.9 miles (shuttle to NJIT available)</td>
+      </tr>
+      <tr>
+        <td>Robert Treat Hotel (Best Western)</td>
+        <td>$109 Single, $125 Double</td>
+        <td>0.6 miles (shuttle to NJIT available)</td>
+      </tr>
+      <tr>
+        <td>Courtyard by Marriott</td>
+        <td>$129 Single, $139 Double</td>
+        <td>0.8 miles</td>
+      </tr>
+       <tr>
+        <td>Hotel Indigo</td>
+        <td>$129 Single or Double</td>
+        <td>0.8 miles (shuttle to NJIT available)</td>
+      </tr>
+    </tbody>
+  </table>
+			 </p>
+			</div>
+		</div>
+		<div id="Schedule" class="parallax8"></div>
+		<div class="container text-center">
+		<div class="row">
+			<h1><center>Schedule</center></h1>
+			<br>
+				<p>  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tuesday, March 19, 2019</td>
+        <td></td>
+ 
+      </tr>
+      <tr>
+        <td>1:00 pm - 7:00 pm	
+	</td>
+        <td>Registration</td>
+
+      </tr>
+      <tr>
+        <td>5:00 pm - 7:00 pm</td>
+        <td>Welcome Reception</td>
+
+      </tr>
+       <tr>
+        <td>Wednesday, March 20, 2019</td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <td>7:30 am - 11:00 am 	
+	
+
+</td>
+        <td>Registration</td>
+
+      </tr>
+      <tr>
+        <td>7:30 am - 8:30 am</td>
+        <td>Breakfast (Conference Provided)</td>
+
+      </tr>
+      <tr>
+        <td>8:30 am - 10:00 am</td>
+        <td>Technical Sessions</td>
+
+      </tr>
+      <tr>	
+	
+	
+
+
+        <td>10:15 am - 11:45 am</td>
+        <td>Conference Welcome and Keynote Presentation</td>
+
+      </tr>
+      <tr>
+        <td>12:00 pm - 1:00 pm</td>
+        <td>Lunch (Conference Provided)</td>
+
+      </tr>
+      <tr>
+        <td>1:15 pm - 3:30 pm</td>
+        <td>Drone Demos</td>
+
+      </tr>
+     <tr>
+        <td>3:30 pm - 3:50 pm</td>
+        <td>Coffee Break</td>
+
+      </tr>
+      <tr>
+	
+        <td>4:00 pm - 5:30 pm	</td>
+        <td>Technical Sessions</td>
+
+      </tr>
+      <tr>
+        <td>5:30 pm - 8:00 pm</td>
+        <td>Dinner (Conference Provided)</td>
+
+      </tr>
+       <tr>	
+	
+	
+
+
+ 
+ 	
+
+
+        <td>Thursday, March 21, 2019</td>
+        <td</td>
+
+      </tr>
+      <tr>
+        <td>7:30 am - 8:30 am</td>
+        <td>Breakfast (Conference Provided)</td>
+
+      </tr>
+      <tr>
+        <td>8:30 am - 10:00 am</td>
+        <td>Technical Sessions</td>
+
+      </tr>
+     <tr>
+	
+
+        <td>10:15 am - 11:45 am</td>
+        <td>Keynote Presentation</td>
+
+      </tr>
+      <tr>
+	
+	
+	
+
+        <td>12:00 pm - 1:00 pm		</td>
+        <td>Lunch (Conference Provided)</td>
+         <tr>
+        <td>1:15 pm - 3:30 pm</td>
+        <td>Drone Demos</td>
+
+      </tr>
+
+      </tr>
+      <tr>
+        <td>3:30 pm - 3:50 pm</td>
+        <td>Coffee Break</td>
+         <tr>
+        <td>4:00 pm - 5:30 pm	</td>
+        <td>Technical Sessions </td>
+
+      </tr>
+ <tr>
+
+ 
+
+        <td>Friday, March 22, 2019</td>
+        <td></td>
+         <tr>
+         
+
+
+
+
+        <td>7:30 am - 8:30 am</td>
+        <td>Breakfast (Conference Provided) </td>
+
+      </tr> <tr>
+        <td>8:30 am -10:00 am	</td>
+        <td>Technical Sessions</td>
+         <tr>
+        <td>10:15 am -11:45 am	</td>
+        <td>Technical Sessions	</td>
+
+      </tr> <tr>
+        <td>12:00 noon - 1:00 pm	</td>
+        <td>Wrap up and Send-off Session & Lunch (Conference Provided)</td>
+         <tr>
+        <td>1:00 pm - 3:00 pm		</td>
+        <td>Student Drone Design Competition </td>
+
+      </tr>
+       <tr>
+        <td>3:30 pm - 3:50 pm</td>
+        <td>Coffee Break</td>
+         <tr>
+        <td>4:00 pm - 5:30 pm	</td>
+        <td>Technical Sessions </td>
+
+      </tr>
+       <tr>
+        <td>3:30 pm - 3:50 pm</td>
+        <td>Coffee Break</td>
+         <tr>
+        <td>4:00 pm - 5:30 pm	</td>
+        <td>Technical Sessions </td>
+
+      </tr>
+  
+    </tbody>
+  </table>
+			 </p>
+			</div>
+		</div>
+		<div id="Team" class="parallax6"></div>
+		<div class="container text-center">
+		<div class="row">
+			<h1><center>One For the Team</center></h1></div>
+			<br><br>
+        <br>
+	<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Pramod Abhichandani	</h2>
+        <p class="title">Publicity Chair</p>
+        <p>example@example.com</p> <br>
+       
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container1">
+      	<br><br>
+        <h2>Ashish Borgaonkar</h2>
+        <p class="title">Local Arrangements Chair</p>
+        <p>example@example.com</p>
+ <br>
+       
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Branislav Dimitrijevice</h2>
+        <p class="title">Demonstrations Chair</p>
+        <p>example@example.com</p>
+ <br>
+       
+        <br>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+        <br>
+<div class="row">
+	<div class="column">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Ashutosh Dutta</h2>
+        <p class="title">Publications Chair</p>
+        <p>example@example.com</p>
+         <br>
+       
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Moshe Kam	</h2>
+        <p class="title">General Chair</p>
+        <p>example@example.com</p>
+         <br>
+       
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Jaskirat Sodhi</h2>
+        <p class="title">Local Arrangements Chair</p>
+        <p>example@example.com</p>
+         <br>
+       
+        <br>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+        <br>
+<div class="row" style="padding-left:">
+	<div class="col-sm-6">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Adriaan de Lind Van Wijngaarden</h2>
+        <p class="title">IEEE Liaison</p>
+        <p>example@example.com</p>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+
+      <div class="container1">
+      	<br><br>
+        <h2>Carolina Yanez</h2>
+        <p class="title">Conference Secretary</p>
+        <p>example@example.com</p>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+		</div><br>
+        <br>
+		<div id="Contact" class="parallax5"></div>
+		<div class="container text-center">
+		<div class="row">
+			<h1><center>Contact Us</center></h1>
+			<br>
+				<p><center>Please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEPj1FSujLXuW8IKxbQE00CjLj9k1JGXDHJFDAHvZYZeRgpw/viewform">form</a> to be added to our mailing list.</center>
+				<br>
+				<center>Look for the registration details on this page very soon</center>
+				<br><br>
+			 </p>
+			</div>
+		</div>
+		<div class="footer">
+  <p><div class="row">
+  <div class="col-sm-3"><a href="http://www.njit.edu/" style="color:white"><p>New Jersey Institute of Technology<br>
+University Heights Newark, New Jersey 07102</p></a></div>
+  <div class="col-sm-3"><a href="http://www.njit.edu/contacts" style="color:white">Contact Us</a></div>
+  <div class="col-sm-3"><a href="http://www.njit.edu/about/maps-directions" style="color:white">Maps And Directions</a></div>
+  <div class="col-sm-3"><a class="social" href="https://www.facebook.com/NewJerseyInstituteofTechnology/" target="_blank" style="color:white"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <a class="social" href="https://twitter.com/njit" target="_blank" style="color:white"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a class="social" href="https://www.youtube.com/user/njit" target="_blank" style="color:white"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+  <a class="social" href="https://www.flickr.com/photos/njit" target="_blank" style="color:white"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+  <center><p style="color:white" style="padding-right:30%">Copyright Rights Reserved   <a href="C:\Users\amit\Desktop\NJIT\drones1.html#myCarousel" style="color:white">NJIT NCE Drones</a><br>In Colloboration with  <a href="https://www.ieee.org/" style="color:white" style="padding-right:45%">IEEE</a>
+  </p></center>
+</div>
+</body>
+</html>
